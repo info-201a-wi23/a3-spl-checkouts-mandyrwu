@@ -18,4 +18,3 @@ barplot <- ggplot(data = df) +
 
 barplot
 
-ggplotly(barplot)

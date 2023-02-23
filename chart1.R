@@ -20,4 +20,4 @@ average <- ggplot(data = avg_checkout) +
        x = "Date",
        y= "Average Checkouts of Item per Month")
 
-ggplotly(average)
+average
