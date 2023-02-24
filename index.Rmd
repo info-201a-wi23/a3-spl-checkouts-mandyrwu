@@ -18,13 +18,11 @@ During the time frame of 2017 to 2023, the most checked out item in a singular m
 
 ### The Dataset
 
-- Who collected/published the data?  
-- What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
-- How was the data collected or generated?  
-- Why was the data collected?  
-- What, if any, ethical questions do you need to consider when working with this data?  
-- What are possible limitations or problems with this data?   (at least 200 words)
+The dataset, Checkouts by Title, is collected and provided by the Seattle Public Library. The data consists of monthly counts of checkout for an item in the library, and provides information on the item's title, creator, publisher, material type, checkout times, and more. The SPL collects this data from various sources. For digital checkouts, the data comes from the media vendors, such as Overdrive, hoopla, Freegal, and RBDigital. For physical checkouts, they source the data from the Legrady artwork data archives for checkouts during April 2005 to September 30, 2016, and from Horizon ILS for checkouts during October 1, 2016 to now. 
 
+This data was collected to keep track of library checkout items on a monthly basis. This allows the SPL as well as the public to see what items are more commonly checked out and what aren't. However, some ethical questions to consider with this data is whether any user privacy was violated. By collecting the data on checkout rate, is the library also keeping track of which users are checking out those materials? If so, even if that data isn't explicitly used or stored, there are still implications to a library user's privacy if their media consumption is being tracked. 
+
+Possible limitations with this data is that it doesn't really reflect the consumption rates of each item. Just because an item is checked out doesn't mean the user actually read/watched/listened to the item, and so the checkout rates cannot be used as an accurate indicator for assessing whether a title has been consumed. Also, we don't know if it's the same users checking out an item or if those checkouts are by unique users, so it also doesn't reflect how many distinct individuals have checked out an item. In addition, the SPL indicates that this dataset only keeps track of the initial checkout rates, so if an item has been renewed (extending their due date), that is not something the system keeps track of. With all these little plotholes in the dataset, it limits our understanding of the true consumption rates of these library items. 
 
 ### Chart 1: Average Checkout Rates over Time
 
