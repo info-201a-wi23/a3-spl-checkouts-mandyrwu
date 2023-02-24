@@ -9,10 +9,14 @@ df <- mutate(df, date = paste0(CheckoutMonth, "-01-", CheckoutYear))
 
 df$date <- as.Date(df$date, format = "%m-%d-%Y")
 
-physical_checkouts <- nrow(df %>%
+unique_items <- df %>% distinct(Title, .keep_all = TRUE)
+
+num_unique_items <- nrow(unique_items)
+
+physical_checkouts <- nrow(unique_items %>%
   filter(UsageClass == "Physical"))
 
-digital_checkouts <- nrow(df %>%
+digital_checkouts <- nrow(unique_items %>%
   filter(UsageClass == "Digital"))
 
 highest_checkout <- df %>%
