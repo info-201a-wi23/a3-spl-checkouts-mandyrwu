@@ -24,6 +24,8 @@ This data was collected to keep track of library checkout items on a monthly bas
 
 Possible limitations with this data is that it doesn't really reflect the consumption rates of each item. Just because an item is checked out doesn't mean the user actually read/watched/listened to the item, and so the checkout rates cannot be used as an accurate indicator for assessing whether a title has been consumed. Also, we don't know if it's the same users checking out an item or if those checkouts are by unique users, so it also doesn't reflect how many distinct individuals have checked out an item. In addition, the SPL indicates that this dataset only keeps track of the initial checkout rates, so if an item has been renewed (extending their due date), that is not something the system keeps track of. With all these little plotholes in the dataset, it limits our understanding of the true consumption rates of these library items. 
 
+For this analysis, I specifically chose a subset of this dataset which only includes data for items that have been checked out at least 10 times a month from 2017-2023. In this dataset, there are a total of 816354 observations (rows) where each row is a singular item, and 12 variables (columns) that contains the information for that specific item. 
+
 ### Chart 1: Average Checkout Rates over Time
 
 The first chart shows the average number of checkouts of a single item in a month for items that have been checked out for 10+ times monthly. I wanted to look at the average checkout times for popular library items over time to see when there were higher checkout rates, and to visually show that trend I displayed the data through a line chart. Based on the line chart, I found that June of 2020 had the highest average checkout times for single items, with an average of 28.9 checkouts each month for one item. This was an interesting finding because this was also the time when the pandemic was in its peak and people were quarantined indefinitely, so it made sense to see an increase in the average checkout rates around that time period.
@@ -45,7 +47,7 @@ barplot
 
 ### Chart 3: Most Chekced Out Material Types
 
-The last chart I analyzed was a piechart that showed the composition of all the checkouts from 2017-2023 based on their material type. I chose to examine this data because I think libraries are typically associated with borrowing books, but libraries actually offer a much wider medium of materials. The Seattle Public Library offers 32 types of items to checkout, and this piechart shows the top 10 most checked out material types. From the chart, we can see that the four most checked out material type are audiobooks, books, eBooks, and videodiscs. 
+The last chart I analyzed was a piechart that showed the composition of all the checkouts from 2017-2023 based on their material type. I chose to examine this data because I think libraries are typically associated with borrowing books, but libraries actually offer a much wider medium of materials. The Seattle Public Library offers 32 types of items to checkout, and this piechart shows the top 10 most checked out material types. From the chart, we can see that the four most checked out material type are audiobooks, books, eBooks, and videodiscs, each with around 3-6 million checkouts from 2017-2023. 
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 source("chart3.R")

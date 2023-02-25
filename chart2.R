@@ -10,9 +10,9 @@ df$date <- as.Date(df$date, format = "%m-%d-%Y")
 
 barplot <- ggplot(data = df) +
   geom_col(aes(x = CheckoutYear, y = Checkouts, fill = UsageClass)) +
-  labs(title = "Checkout Count for Items that Have Been Checked Out 10+ Times Monthly",
+  labs(title = "Annual Checkout Count by Item Type",
       x = "Date",
-      y = "Total Number of Checkouts",
+      y = "Total Number of Checkouts in a Year",
       fill = "Item Type") +
   scale_y_continuous(labels = label_number_si())
 

@@ -12,12 +12,11 @@ avg_checkout <- df %>%
   group_by(date) %>%
   summarize(avgCheckouts = mean(Checkouts))
 
-
 average <- ggplot(data = avg_checkout) +
   geom_line(aes(x = date, y = avgCheckouts)) + 
   geom_point(aes(x = date, y = avgCheckouts)) +
-  labs(title = "Checkout Rates for Items that Have Been Checked Out 10+ Times Monthly",
+  labs(title = "Monthly Average Checkouts per Item",
        x = "Date",
-       y= "Average Checkouts of Item per Month")
+       y= "Average Checkouts of an Item in a Month") 
 
 average
